@@ -27,12 +27,13 @@ class RfCoreUtils {
     }
 
 
-    public static function register_user($nombre = "" , $username = "" , $email = "" , $telefono = "" , $password = "" , $estado = "" , $id_tipo_usuario = ""){
+    public static function register_user($nombre = "" , $username = "" , $email = "", $fecha_nacimiento = "" , $telefono = "" , $password = "" , $estado = "" , $id_tipo_usuario = ""){
 
         $data = [
             "nombre"            => $nombre,
             "username"          => $username,
             "email"             => $email,
+            "fecha_nacimiento"  => $fecha_nacimiento,
             "telefono"          => $telefono,
             "password"          => $password,
             "estado"            => $estado,
